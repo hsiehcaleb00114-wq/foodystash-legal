@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FoodyStash — 隱私權政策與服務條款</title>
+<meta name="description" content="FoodyStash 的隱私權政策與服務條款：我們收集什麼資料、存在哪裡、由誰處理，以及你可以怎麼管理。">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #f7f7f8;
+    --text: #23232a;
+    --muted: #6b6b78;
+    --line: #e3e3e8;
+    --accent: #c00033;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16161a;
+      --surface: #1e1e23;
+      --text: #ececed;
+      --muted: #a0a0ab;
+      --line: #2e2e35;
+      --accent: #ff6b8a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Noto Sans TC", "Noto Sans JP", "Noto Sans KR", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { padding: 40px 0 20px; border-bottom: 1px solid var(--line); }
+  .brand { font-weight: 700; font-size: 20px; letter-spacing: -0.01em; }
+  .brand span { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+  nav button {
+    font: inherit;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  nav button[aria-selected="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  h1 { font-size: 26px; line-height: 1.35; margin: 32px 0 8px; letter-spacing: -0.01em; }
+  h2 { font-size: 17px; margin: 34px 0 10px; }
+  p { margin: 0 0 12px; }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .intro { background: var(--surface); border-radius: 12px; padding: 16px 18px; }
+  section { border-top: 1px solid var(--line); padding-top: 4px; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">Foody<span>Stash</span></div>
+    <nav id="langs" aria-label="Language">
+      <button type="button" data-pick="zh-TW" aria-selected="false">繁體中文</button>
+      <button type="button" data-pick="zh-CN" aria-selected="false">简体中文</button>
+      <button type="button" data-pick="en" aria-selected="false">English</button>
+      <button type="button" data-pick="ja" aria-selected="false">日本語</button>
+      <button type="button" data-pick="ko" aria-selected="false">한국어</button>
+    </nav>
+  </header>
+
+    <article data-locale="zh-TW" lang="zh-Hant" hidden>
+      <h1>隱私權政策與服務條款</h1>
+      <p class="updated">最後更新：2026 年 9 月 10 日</p>
+      <p class="intro">FoodyStash 是一款食譜收藏、餐點規劃與購物清單 App。這份文件說明我們收集什麼資料、為什麼收集、交給誰處理，以及你可以怎麼管理它。我們不販售個人資料，App 內沒有廣告，也沒有第三方追蹤或分析 SDK。</p>
+      <section>
+        <h2>我們收集哪些資料</h2>
+        <p>建立帳號時：Email 與顯示名稱。密碼由 Supabase Auth 以雜湊形式保管，我們看不到原文。</p>
+        <p>使用 App 時：你建立的食譜、收藏夾、餐點計畫、購物清單與筆記，以及語言、單位、通知等偏好設定。你選擇上傳的食譜圖片與頭像也包含在內。</p>
+        <p>我們不收集廣告識別碼、位置、通訊錄，也不追蹤你在其他 App 或網站上的行為。</p>
+      </section>
+      <section>
+        <h2>資料存在哪裡、由誰處理</h2>
+        <p>你的帳號與內容存放在 Supabase（資料庫與檔案儲存），伺服器位於新加坡。圖片存在私有儲存空間，只能透過短期有效的簽名網址讀取。</p>
+        <p>我們只使用三個第三方服務：<br>• Supabase —— 帳號、資料庫與圖片儲存<br>• Google Gemini —— 僅在你使用 AI 匯入時（見下一節）<br>• RevenueCat —— 訂閱狀態管理</p>
+        <p>除此之外，我們不會把你的資料交給任何第三方，也不會用於廣告。</p>
+      </section>
+      <section>
+        <h2>匯入與 AI 解析</h2>
+        <p>從網址匯入時，該網址會送到我們的解析服務，由它抓取該公開網頁並取出食譜內容。我們不保存抓回來的網頁。</p>
+        <p>從照片、影片或 YouTube 網址匯入，以及使用「AI 估算營養」時，你提供的內容會送到 Google Gemini 進行辨識，並受 Google 的條款約束。請不要匯入含有他人個資或敏感資訊的圖片。</p>
+        <p>重要：我們目前使用的 Gemini 方案，Google 可能會將收到的內容用於改善其產品與服務。如果你不希望如此，請不要使用照片、影片與 YouTube 匯入 —— 貼上文字與手動建立完全在你的裝置上處理。</p>
+      </section>
+      <section>
+        <h2>相機與相簿權限</h2>
+        <p>只有在你主動選擇拍照或從相簿選圖時，才會請求權限。我們不會在背景存取你的相簿。</p>
+        <p>你選定的圖片會上傳到我們的私有儲存空間，作為食譜封面或頭像；如果你選的是「AI 辨識」，該圖片還會送到 Google Gemini。你可以隨時在 App 內刪除圖片，也可以在系統設定收回權限。</p>
+      </section>
+      <section>
+        <h2>通知</h2>
+        <p>提醒完全由你的裝置在本機排定與發送，不經過任何伺服器，也不需要推播權杖。你的餐點計畫不會因為通知而被傳出去。可以隨時在「設定 → 通知」或系統設定關閉。</p>
+      </section>
+      <section>
+        <h2>家庭共享</h2>
+        <p>啟用家庭共享後，你邀請的成員可以看到共享廚房裡的食譜庫、餐點計畫與購物清單，以及每一筆是誰新增或排定的。邀請以 Email 指定對象，對方下次開啟 App 時會看到邀請。</p>
+        <p>你可以隨時移除成員或調整為唯讀權限；成員退出或被移除後就無法再存取這些內容。</p>
+      </section>
+      <section>
+        <h2>訂閱與付款</h2>
+        <p>訂閱由 App Store 或 Google Play 收款，我們接觸不到你的信用卡或付款資訊。</p>
+        <p>我們透過 RevenueCat 得知你的訂閱是否有效，它會收到一組對應到你帳號的識別碼與訂閱狀態，不含你的付款細節。取消訂閱請到裝置的訂閱設定操作。</p>
+      </section>
+      <section>
+        <h2>你的權利、資料保留與刪除</h2>
+        <p>你可以在 App 內隨時查看與修改自己的資料。</p>
+        <p>「設定 → 個人帳號 → 刪除帳號」會永久刪除你的帳號、所有食譜與計畫，以及你上傳的圖片，此動作無法復原。若只想清空內容而保留帳號，可以使用「清除所有資料」。</p>
+        <p>我們保留你的資料直到你刪除為止 —— 我們不會為了分析而另外留副本。如果你想要一份自己資料的副本，或對本政策有疑問，請用下方的信箱聯絡我們。</p>
+      </section>
+      <section>
+        <h2>兒童</h2>
+        <p>FoodyStash 不是針對 13 歲以下兒童設計的產品，我們也不會刻意收集兒童的個人資料。如果你認為孩子在未經同意下建立了帳號，請聯絡我們，我們會刪除該帳號。</p>
+      </section>
+      <section>
+        <h2>聯絡我們與政策變更</h2>
+        <p>關於隱私或個人資料的任何問題，請寄信到 <a href="mailto:foodystash@gmail.com">foodystash@gmail.com</a>。</p>
+        <p>本政策有重大變更時，我們會更新這一頁的日期，並在 App 內告知。</p>
+      </section>
+      <section>
+        <h2>服務條款</h2>
+        <p>匯入的食譜內容著作權屬於原作者。FoodyStash 只提供個人收藏與整理用途，請勿把他人的食譜重新公開發布。</p>
+        <p>營養資訊與 AI 估算值僅供參考，不構成醫療或營養建議。過敏原標示是依食材名稱的文字比對推測的提醒，可能有遺漏或誤判 —— 有過敏疑慮時請務必自行確認包裝標示與實際成分。</p>
+        <p>本服務按現況提供。我們會盡力維持服務正常運作，但不保證不中斷或完全無誤。</p>
+      </section>
+    </article>
+    <article data-locale="zh-CN" lang="zh-Hans" hidden>
+      <h1>隐私权政策与服务条款</h1>
+      <p class="updated">最后更新：2026 年 9 月 10 日</p>
+      <p class="intro">FoodyStash 是一款食谱收藏、餐点规划与购物清单 App。这份文件说明我们收集什么数据、为什么收集、交给谁处理，以及你可以怎么管理它。我们不贩售个人数据，App 内没有广告，也没有第三方追踪或分析 SDK。</p>
+      <section>
+        <h2>我们收集哪些数据</h2>
+        <p>建立账号时：Email 与显示名称。密码由 Supabase Auth 以哈希形式保管，我们看不到原文。</p>
+        <p>使用 App 时：你建立的食谱、收藏夹、餐点计划、购物清单与笔记，以及语言、单位、通知等偏好设置。你选择上传的食谱图片与头像也包含在内。</p>
+        <p>我们不收集广告标识符、位置、通讯录，也不追踪你在其他 App 或网站上的行为。</p>
+      </section>
+      <section>
+        <h2>数据存在哪里、由谁处理</h2>
+        <p>你的账号与内容存放在 Supabase（数据库与文件储存），服务器位于新加坡。图片存在私有储存空间，只能透过短期有效的签名网址读取。</p>
+        <p>我们只使用三个第三方服务：<br>• Supabase —— 账号、数据库与图片储存<br>• Google Gemini —— 仅在你使用 AI 导入时（见下一节）<br>• RevenueCat —— 订阅状态管理</p>
+        <p>除此之外，我们不会把你的数据交给任何第三方，也不会用于广告。</p>
+      </section>
+      <section>
+        <h2>导入与 AI 解析</h2>
+        <p>从网址导入时，该网址会送到我们的解析服务，由它抓取该公开网页并取出食谱内容。我们不保存抓回来的网页。</p>
+        <p>从照片、影片或 YouTube 网址导入，以及使用「AI 估算营养」时，你提供的内容会送到 Google Gemini 进行辨识，并受 Google 的条款约束。请不要导入含有他人个资或敏感信息的图片。</p>
+        <p>重要：我们目前使用的 Gemini 方案，Google 可能会将收到的内容用于改善其产品与服务。如果你不希望如此，请不要使用照片、影片与 YouTube 导入 —— 粘贴文字与手动建立完全在你的设备上处理。</p>
+      </section>
+      <section>
+        <h2>相机与相册权限</h2>
+        <p>只有在你主动选择拍照或从相册选图时，才会请求权限。我们不会在背景存取你的相册。</p>
+        <p>你选定的图片会上传到我们的私有储存空间，作为食谱封面或头像；如果你选的是「AI 辨识」，该图片还会送到 Google Gemini。你可以随时在 App 内删除图片，也可以在系统设置收回权限。</p>
+      </section>
+      <section>
+        <h2>通知</h2>
+        <p>提醒完全由你的设备在本机排定与发送，不经过任何服务器，也不需要推送令牌。你的餐点计划不会因为通知而被传出去。可以随时在「设置 → 通知」或系统设置关闭。</p>
+      </section>
+      <section>
+        <h2>家庭共享</h2>
+        <p>启用家庭共享后，你邀请的成员可以看到共享厨房里的食谱库、餐点计划与购物清单，以及每一笔是谁新增或排定的。邀请以 Email 指定对象，对方下次开启 App 时会看到邀请。</p>
+        <p>你可以随时移除成员或调整为只读权限；成员退出或被移除后就无法再存取这些内容。</p>
+      </section>
+      <section>
+        <h2>订阅与付款</h2>
+        <p>订阅由 App Store 或 Google Play 收款，我们接触不到你的信用卡或付款信息。</p>
+        <p>我们透过 RevenueCat 得知你的订阅是否有效，它会收到一组对应到你账号的识别码与订阅状态，不含你的付款细节。取消订阅请到设备的订阅设置操作。</p>
+      </section>
+      <section>
+        <h2>你的权利、数据保留与删除</h2>
+        <p>你可以在 App 内随时查看与修改自己的数据。</p>
+        <p>「设置 → 个人账号 → 删除账号」会永久删除你的账号、所有食谱与计划，以及你上传的图片，此操作无法恢复。若只想清空内容而保留账号，可以使用「清除所有数据」。</p>
+        <p>我们保留你的数据直到你删除为止 —— 我们不会为了分析而另外留副本。如果你想要一份自己数据的副本，或对本政策有疑问，请用下方的信箱联络我们。</p>
+      </section>
+      <section>
+        <h2>儿童</h2>
+        <p>FoodyStash 不是针对 13 岁以下儿童设计的产品，我们也不会刻意收集儿童的个人数据。如果你认为孩子在未经同意下建立了账号，请联络我们，我们会删除该账号。</p>
+      </section>
+      <section>
+        <h2>联络我们与政策变更</h2>
+        <p>关于隐私或个人数据的任何问题，请寄信到 <a href="mailto:foodystash@gmail.com">foodystash@gmail.com</a>。</p>
+        <p>本政策有重大变更时，我们会更新这一页的日期，并在 App 内告知。</p>
+      </section>
+      <section>
+        <h2>服务条款</h2>
+        <p>导入的食谱内容著作权属于原作者。FoodyStash 只提供个人收藏与整理用途，请勿把他人的食谱重新公开发布。</p>
+        <p>营养信息与 AI 估算值仅供参考，不构成医疗或营养建议。过敏原标示是依食材名称的文字比对推测的提醒，可能有遗漏或误判 —— 有过敏疑虑时请务必自行确认包装标示与实际成分。</p>
+        <p>本服务按现况提供。我们会尽力维持服务正常运作，但不保证不中断或完全无误。</p>
+      </section>
+    </article>
+    <article data-locale="en" lang="en" hidden>
+      <h1>Privacy Policy &amp; Terms of Use</h1>
+      <p class="updated">Last updated 10 September 2026</p>
+      <p class="intro">FoodyStash is a recipe, meal-planning and shopping-list app. This document explains what we collect, why, who processes it, and how you can manage it. We do not sell personal data, and the app contains no advertising and no third-party tracking or analytics SDKs.</p>
+      <section>
+        <h2>What we collect</h2>
+        <p>When you create an account: your email address and display name. Passwords are held by Supabase Auth as hashes — we never see the original.</p>
+        <p>While you use the app: the recipes, collections, meal plans, shopping lists and notes you create, plus preferences such as language, units and reminders. Recipe images and avatars you choose to upload are included.</p>
+        <p>We do not collect advertising identifiers, location or contacts, and we do not track you across other apps or websites.</p>
+      </section>
+      <section>
+        <h2>Where your data lives and who processes it</h2>
+        <p>Your account and content are stored with Supabase (database and file storage) on servers in Singapore. Images are kept in private buckets and served only through short-lived signed URLs.</p>
+        <p>We use exactly three third-party services:<br>• Supabase — accounts, database and image storage<br>• Google Gemini — only when you use AI import (see the next section)<br>• RevenueCat — subscription status</p>
+        <p>Beyond these, we do not share your data with anyone, and we never use it for advertising.</p>
+      </section>
+      <section>
+        <h2>Importing and AI parsing</h2>
+        <p>When you import from a URL, that URL is sent to our parsing service, which fetches the public page and extracts the recipe. We do not keep the fetched page.</p>
+        <p>When you import from a photo, a video or a YouTube link — and when you use AI nutrition estimation — the content you provide is sent to Google Gemini for recognition and is subject to Google’s terms. Please do not import images containing other people’s personal or sensitive information.</p>
+        <p>Important: on the Gemini plan we currently use, Google may use the content it receives to improve its products and services. If you would rather that did not happen, do not use photo, video or YouTube import — pasting text and creating recipes by hand are handled entirely on your device.</p>
+      </section>
+      <section>
+        <h2>Camera and photo library</h2>
+        <p>Permission is requested only when you actively choose to take a photo or pick one from your library. We never access your library in the background.</p>
+        <p>The image you choose is uploaded to our private storage as a recipe cover or avatar; if you chose AI recognition, it is also sent to Google Gemini. You can delete images in the app at any time, and revoke the permission in your device settings.</p>
+      </section>
+      <section>
+        <h2>Notifications</h2>
+        <p>Reminders are scheduled and delivered entirely by your own device. They do not pass through any server and need no push token, so your meal plan never leaves the phone because of a reminder. You can turn them off under Settings → Notifications or in your system settings.</p>
+      </section>
+      <section>
+        <h2>Household sharing</h2>
+        <p>With household sharing on, the members you invite can see the shared kitchen’s recipes, meal plans and shopping lists, including who added or scheduled each item. Invitations are addressed by email and appear the next time that person opens the app.</p>
+        <p>You can remove members or set them to view-only at any time. Once someone leaves or is removed, they lose access.</p>
+      </section>
+      <section>
+        <h2>Subscriptions and payment</h2>
+        <p>Payment is taken by the App Store or Google Play. We never see your card or payment details.</p>
+        <p>We learn whether your subscription is active through RevenueCat, which receives an identifier tied to your account and the subscription status — not your payment details. To cancel, use the subscription settings on your device.</p>
+      </section>
+      <section>
+        <h2>Your rights, retention and deletion</h2>
+        <p>You can view and change your own data in the app at any time.</p>
+        <p>Settings → Account → Delete account permanently removes your account, every recipe and plan, and the images you uploaded. This cannot be undone. If you only want to empty your content but keep the account, use Clear all data.</p>
+        <p>We keep your data until you delete it — we do not retain separate copies for analysis. If you would like a copy of your data, or have any question about this policy, contact us at the address below.</p>
+      </section>
+      <section>
+        <h2>Children</h2>
+        <p>FoodyStash is not directed at children under 13, and we do not knowingly collect personal data from them. If you believe a child created an account without your consent, contact us and we will delete it.</p>
+      </section>
+      <section>
+        <h2>Contact us and changes to this policy</h2>
+        <p>For any question about privacy or your personal data, email us at <a href="mailto:foodystash@gmail.com">foodystash@gmail.com</a>.</p>
+        <p>If this policy changes materially we will update the date on this page and let you know in the app.</p>
+      </section>
+      <section>
+        <h2>Terms of Use</h2>
+        <p>Imported recipes remain the copyright of their authors. FoodyStash is for personal collecting and organising only — please do not republish someone else’s recipe.</p>
+        <p>Nutrition figures and AI estimates are for reference only and are not medical or nutritional advice. Allergen flags are guesses based on matching ingredient names as text; they can miss things or be wrong — if you have an allergy, always check the packaging and actual ingredients yourself.</p>
+        <p>The service is provided as is. We work to keep it running, but cannot guarantee it will be uninterrupted or error-free.</p>
+      </section>
+    </article>
+    <article data-locale="ja" lang="ja" hidden>
+      <h1>プライバシーポリシーと利用規約</h1>
+      <p class="updated">最終更新：2026 年 9 月 10 日</p>
+      <p class="intro">FoodyStash はレシピの保存・献立作成・買い物リストのアプリです。本書では、取得する情報とその目的、処理を委託する事業者、そして利用者による管理方法を説明します。個人データの販売は行わず、広告および第三者のトラッキング／解析 SDK も搭載していません。</p>
+      <section>
+        <h2>取得する情報</h2>
+        <p>アカウント作成時：メールアドレスと表示名。パスワードは Supabase Auth がハッシュとして保管し、当社が平文を見ることはありません。</p>
+        <p>ご利用時：作成されたレシピ、コレクション、献立、買い物リスト、メモ、および言語・単位・通知などの設定。アップロードを選択されたレシピ画像とプロフィール画像も含みます。</p>
+        <p>広告識別子・位置情報・連絡先は取得せず、他のアプリやサイトを横断した追跡も行いません。</p>
+      </section>
+      <section>
+        <h2>データの保管場所と処理事業者</h2>
+        <p>アカウントとコンテンツは Supabase（データベースとファイルストレージ、サーバーはシンガポール）に保管されます。画像は非公開バケットに置かれ、短時間だけ有効な署名付き URL 経由でのみ配信されます。</p>
+        <p>利用している第三者サービスは次の 3 つだけです。<br>• Supabase — アカウント、データベース、画像保管<br>• Google Gemini — AI 取り込みを利用したときのみ（次節参照）<br>• RevenueCat — サブスクリプション状態の管理</p>
+        <p>これ以外に third party へデータを提供することはなく、広告目的にも使用しません。</p>
+      </section>
+      <section>
+        <h2>取り込みと AI 解析</h2>
+        <p>URL から取り込む場合、その URL は当社の解析サービスに送信され、公開ページを取得してレシピ部分を抽出します。取得したページは保存しません。</p>
+        <p>写真・動画・YouTube リンクからの取り込み、および「AI による栄養推定」を利用する場合、提供された内容は認識のため Google Gemini に送信され、Google の規約が適用されます。他者の個人情報や機微な情報を含む画像は取り込まないでください。</p>
+        <p>重要：現在利用している Gemini のプランでは、送信された内容が Google の製品・サービス改善に利用される可能性があります。これを望まない場合は、写真・動画・YouTube からの取り込みをご利用にならないでください。テキストの貼り付けと手動作成は、すべて端末内で処理されます。</p>
+      </section>
+      <section>
+        <h2>カメラと写真へのアクセス</h2>
+        <p>権限を要求するのは、撮影またはライブラリからの選択を利用者が能動的に選んだときだけです。バックグラウンドでライブラリにアクセスすることはありません。</p>
+        <p>選択された画像は、レシピの写真またはプロフィール画像として当社の非公開ストレージにアップロードされます。AI 認識を選んだ場合は Google Gemini にも送信されます。画像はアプリ内でいつでも削除でき、権限は端末の設定から取り消せます。</p>
+      </section>
+      <section>
+        <h2>通知</h2>
+        <p>リマインダーは端末内でスケジュールされ通知されます。サーバーを経由せず、プッシュトークンも不要のため、通知のために献立が外部へ送られることはありません。「設定 → 通知」または OS の設定からいつでも無効にできます。</p>
+      </section>
+      <section>
+        <h2>家族共有</h2>
+        <p>家族共有を有効にすると、招待したメンバーは共有キッチンのレシピ、献立、買い物リストと、各項目を誰が追加・登録したかを閲覧できます。招待はメールアドレス宛てに行われ、相手が次にアプリを開いたときに表示されます。</p>
+        <p>メンバーの削除や閲覧のみへの変更はいつでも可能です。退出または削除された時点でアクセスできなくなります。</p>
+      </section>
+      <section>
+        <h2>サブスクリプションと支払い</h2>
+        <p>決済は App Store または Google Play が行い、当社がカード情報や支払い情報に触れることはありません。</p>
+        <p>サブスクリプションが有効かどうかは RevenueCat を通じて把握します。RevenueCat にはアカウントに対応する識別子と契約状態のみが渡され、支払い情報は含まれません。解約は端末のサブスクリプション設定から行ってください。</p>
+      </section>
+      <section>
+        <h2>利用者の権利・保存期間・削除</h2>
+        <p>アプリ内でご自身のデータをいつでも確認・変更できます。</p>
+        <p>「設定 → アカウント → アカウントを削除」で、アカウント、すべてのレシピと献立、アップロードした画像が完全に削除されます。取り消しはできません。アカウントを残したまま内容だけを消したい場合は「すべてのデータを消去」をご利用ください。</p>
+        <p>データは利用者が削除するまで保存し、分析目的の別途コピーは保持しません。データの写しをご希望の場合、または本ポリシーについてご質問がある場合は、下記の連絡先までお問い合わせください。</p>
+      </section>
+      <section>
+        <h2>お子様について</h2>
+        <p>FoodyStash は 13 歳未満のお子様を対象とした製品ではなく、お子様の個人情報を意図的に取得することもありません。お子様が同意なくアカウントを作成したと思われる場合はご連絡ください。当該アカウントを削除します。</p>
+      </section>
+      <section>
+        <h2>お問い合わせと本ポリシーの変更</h2>
+        <p>プライバシーや個人情報に関するお問い合わせは <a href="mailto:foodystash@gmail.com">foodystash@gmail.com</a> までメールでご連絡ください。</p>
+        <p>本ポリシーに重要な変更がある場合は、本ページの日付を更新し、アプリ内でもお知らせします。</p>
+      </section>
+      <section>
+        <h2>利用規約</h2>
+        <p>取り込んだレシピの著作権は原作者に帰属します。FoodyStash は個人的な保存・整理のためのものであり、他人のレシピを再公開しないでください。</p>
+        <p>栄養情報および AI による推定値は参考であり、医療・栄養上の助言ではありません。アレルゲン表示は食材名の文字照合による推測の注意喚起で、見落としや誤りが生じ得ます。アレルギーがある場合は必ずご自身で包装表示と実際の原材料をご確認ください。</p>
+        <p>本サービスは現状有姿で提供されます。安定した提供に努めますが、無中断や無誤りを保証するものではありません。</p>
+      </section>
+    </article>
+    <article data-locale="ko" lang="ko" hidden>
+      <h1>개인정보 처리방침 및 이용약관</h1>
+      <p class="updated">최종 업데이트: 2026년 9월 10일</p>
+      <p class="intro">FoodyStash는 레시피 보관, 식단 계획, 장보기 목록 앱입니다. 이 문서는 수집하는 정보와 목적, 처리를 위탁하는 업체, 이용자가 관리하는 방법을 설명합니다. 개인정보를 판매하지 않으며 광고와 제3자 추적·분석 SDK도 없습니다.</p>
+      <section>
+        <h2>수집하는 정보</h2>
+        <p>계정을 만들 때: 이메일 주소와 표시 이름. 비밀번호는 Supabase Auth가 해시로 보관하며 저희는 원문을 볼 수 없습니다.</p>
+        <p>앱을 사용할 때: 작성한 레시피, 컬렉션, 식단, 장보기 목록, 메모와 언어·단위·알림 등의 환경설정. 업로드하기로 선택한 레시피 이미지와 프로필 사진도 포함됩니다.</p>
+        <p>광고 식별자, 위치, 연락처는 수집하지 않으며 다른 앱이나 웹사이트를 넘나드는 추적도 하지 않습니다.</p>
+      </section>
+      <section>
+        <h2>데이터 보관 위치와 처리 업체</h2>
+        <p>계정과 콘텐츠는 Supabase(데이터베이스 및 파일 저장소, 서버는 싱가포르)에 보관됩니다. 이미지는 비공개 버킷에 저장되며 짧은 시간만 유효한 서명 URL로만 제공됩니다.</p>
+        <p>사용하는 제3자 서비스는 다음 세 가지뿐입니다.<br>• Supabase — 계정, 데이터베이스, 이미지 저장<br>• Google Gemini — AI 가져오기를 사용할 때만(다음 항목 참조)<br>• RevenueCat — 구독 상태 관리</p>
+        <p>이 외에는 어떤 제3자에게도 데이터를 제공하지 않으며 광고 목적으로도 사용하지 않습니다.</p>
+      </section>
+      <section>
+        <h2>가져오기와 AI 분석</h2>
+        <p>URL로 가져올 때 해당 URL은 저희 분석 서비스로 전송되어 공개 페이지를 가져와 레시피를 추출합니다. 가져온 페이지는 보관하지 않습니다.</p>
+        <p>사진, 동영상, YouTube 링크로 가져오거나 ‘AI 영양 추정’을 사용할 때는 제공한 콘텐츠가 인식을 위해 Google Gemini로 전송되며 Google의 약관이 적용됩니다. 다른 사람의 개인정보나 민감한 정보가 담긴 이미지는 가져오지 마세요.</p>
+        <p>중요: 현재 사용 중인 Gemini 요금제에서는 Google이 전달받은 콘텐츠를 제품·서비스 개선에 사용할 수 있습니다. 이를 원하지 않으시면 사진·동영상·YouTube 가져오기를 사용하지 마세요. 텍스트 붙여넣기와 직접 작성은 전부 기기 안에서 처리됩니다.</p>
+      </section>
+      <section>
+        <h2>카메라와 사진 접근 권한</h2>
+        <p>사진을 찍거나 라이브러리에서 고르기를 직접 선택했을 때만 권한을 요청합니다. 백그라운드에서 라이브러리에 접근하지 않습니다.</p>
+        <p>선택한 이미지는 레시피 사진이나 프로필 사진으로 저희 비공개 저장소에 업로드됩니다. AI 인식을 선택했다면 Google Gemini로도 전송됩니다. 이미지는 앱에서 언제든 삭제할 수 있고, 권한은 기기 설정에서 해제할 수 있습니다.</p>
+      </section>
+      <section>
+        <h2>알림</h2>
+        <p>알림은 전적으로 사용자의 기기에서 예약되고 전달됩니다. 서버를 거치지 않고 푸시 토큰도 필요 없으므로, 알림 때문에 식단이 외부로 나가지 않습니다. ‘설정 → 알림’ 또는 시스템 설정에서 언제든 끌 수 있습니다.</p>
+      </section>
+      <section>
+        <h2>가족 공유</h2>
+        <p>가족 공유를 켜면 초대한 멤버가 공유 주방의 레시피, 식단, 장보기 목록과 각 항목을 누가 추가·등록했는지 볼 수 있습니다. 초대는 이메일로 지정되며 상대방이 다음에 앱을 열 때 표시됩니다.</p>
+        <p>멤버를 삭제하거나 보기 전용으로 바꾸는 것은 언제든 가능합니다. 나가거나 삭제되면 더 이상 접근할 수 없습니다.</p>
+      </section>
+      <section>
+        <h2>구독과 결제</h2>
+        <p>결제는 App Store 또는 Google Play가 처리하며 저희는 카드나 결제 정보를 볼 수 없습니다.</p>
+        <p>구독이 유효한지는 RevenueCat을 통해 확인합니다. RevenueCat에는 계정에 대응하는 식별자와 구독 상태만 전달되며 결제 정보는 포함되지 않습니다. 해지는 기기의 구독 설정에서 하시면 됩니다.</p>
+      </section>
+      <section>
+        <h2>이용자의 권리, 보관 기간, 삭제</h2>
+        <p>앱에서 언제든지 본인의 데이터를 확인하고 수정할 수 있습니다.</p>
+        <p>‘설정 → 계정 → 계정 삭제’를 사용하면 계정, 모든 레시피와 식단, 업로드한 이미지가 영구적으로 삭제되며 되돌릴 수 없습니다. 계정은 유지하고 콘텐츠만 비우려면 ‘모든 데이터 지우기’를 사용하세요.</p>
+        <p>데이터는 이용자가 삭제할 때까지 보관하며, 분석을 위한 별도 사본은 보관하지 않습니다. 데이터 사본이 필요하거나 본 방침에 대한 문의가 있으면 아래 주소로 연락해 주세요.</p>
+      </section>
+      <section>
+        <h2>아동</h2>
+        <p>FoodyStash는 13세 미만 아동을 대상으로 하지 않으며 아동의 개인정보를 의도적으로 수집하지 않습니다. 자녀가 동의 없이 계정을 만들었다고 생각되면 연락 주시면 해당 계정을 삭제하겠습니다.</p>
+      </section>
+      <section>
+        <h2>문의 및 방침 변경</h2>
+        <p>개인정보에 관한 문의는 <a href="mailto:foodystash@gmail.com">foodystash@gmail.com</a>로 메일 주시기 바랍니다.</p>
+        <p>본 방침이 중요하게 변경되면 이 페이지의 날짜를 갱신하고 앱에서도 알려 드립니다.</p>
+      </section>
+      <section>
+        <h2>이용약관</h2>
+        <p>가져온 레시피의 저작권은 원작자에게 있습니다. FoodyStash는 개인적인 보관과 정리를 위한 것이므로 다른 사람의 레시피를 재공개하지 마세요.</p>
+        <p>영양 정보와 AI 추정치는 참고용이며 의료·영양 조언이 아닙니다. 알레르기 표시는 재료 이름을 텍스트로 대조해 추측한 안내로, 누락되거나 틀릴 수 있습니다. 알레르기가 있다면 반드시 포장 표시와 실제 원재료를 직접 확인하세요.</p>
+        <p>본 서비스는 있는 그대로 제공됩니다. 안정적인 운영을 위해 노력하지만 무중단이나 무오류를 보장하지는 않습니다.</p>
+      </section>
+    </article>
+
+  <footer>FoodyStash · Stash · Plan · Cook</footer>
+</div>
+
+<script>
+  // 語言：先看網址的 ?lang=，再看瀏覽器偏好，最後退回繁體中文
+  var codes = ["zh-TW","zh-CN","en","ja","ko"];
+
+  function pick(code) {
+    codes.forEach(function (c) {
+      var article = document.querySelector('article[data-locale="' + c + '"]');
+      var button = document.querySelector('button[data-pick="' + c + '"]');
+      var on = c === code;
+      if (article) article.hidden = !on;
+      if (button) button.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    document.documentElement.lang = code;
+  }
+
+  function guess() {
+    var param = new URLSearchParams(location.search).get('lang');
+    if (param && codes.indexOf(param) >= 0) return param;
+
+    var wanted = (navigator.languages || [navigator.language || '']).map(String);
+    for (var i = 0; i < wanted.length; i++) {
+      var tag = wanted[i];
+      if (codes.indexOf(tag) >= 0) return tag;
+      // zh-HK / zh-Hant-TW 之類的也算繁體
+      if (/^zh\b/.test(tag)) return /Hans|CN|SG/i.test(tag) ? 'zh-CN' : 'zh-TW';
+      var base = tag.split('-')[0];
+      if (codes.indexOf(base) >= 0) return base;
+    }
+    return 'zh-TW';
+  }
+
+  document.getElementById('langs').addEventListener('click', function (event) {
+    var code = event.target.getAttribute('data-pick');
+    if (code) pick(code);
+  });
+
+  pick(guess());
+</script>
+</body>
+</html>
